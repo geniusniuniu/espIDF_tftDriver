@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "tft.h"
-
+#include <assert.h>
 
 static const char *TAG = "TFT";
 
@@ -76,7 +76,7 @@ void tft_Init(void)
     ESP_ERROR_CHECK(esp_lcd_panel_reset(panel_handle));
     ESP_ERROR_CHECK(esp_lcd_panel_init(panel_handle));
 
-    ESP_ERROR_CHECK(esp_lcd_panel_mirror(panel_handle, true, false));
+    ESP_ERROR_CHECK(esp_lcd_panel_mirror(panel_handle, false, false));
 
     // user can flush pre-defined pattern to the screen before we turn on the screen or backlight
     ESP_ERROR_CHECK(esp_lcd_panel_disp_on_off(panel_handle, true));
@@ -84,3 +84,24 @@ void tft_Init(void)
     ESP_LOGI(TAG, "Turn on LCD backlight");
     gpio_set_level(EXAMPLE_PIN_NUM_BK_LIGHT, LCD_BK_LIGHT_ON_LEVEL);
 }
+
+esp_err_t tft_draw_point(uint16_t x, uint16_t y, uint16_t color)  
+{  
+    x += ili9341->x_gap;  
+    y += ili9341->y_gap;  
+
+    // 确保坐标在显示范围内  
+    assert((x < LCD_H_RES ) && (y< LCD_V_RES) && " position must in 240*320 ");
+
+    // 定义一个1x1的位图  
+    uint8_t color_data = (uint8_t)(color >> 8); // 假设是16位颜色，深度可能不同，需根据实际显示面板位深调整  
+
+    esp_lcd_panel_io_tx_param(ili9341->io, LCD_CMD_CASET, (uint8_t[]) { (x >> 8) & 0xFF,  x & 0xFF,   (x >> 8) & 0xFF, x & 0xFF,  }, 4);  
+
+    esp_lcd_panel_io_tx_param(ili9341->io, LCD_CMD_RASET, (uint8_t[]) { (y >> 8) & 0xFF,y & 0xFF,  (y >> 8) & 0xFF, y & 0xFF, }, 4);  
+
+    size_t len = ili9341->fb_bits_per_pixel / 8;  
+    esp_lcd_panel_io_tx_color(ili9341->io, LCD_CMD_RAMWR, &color_data, len);  
+
+    return ESP_OK;  
+}  

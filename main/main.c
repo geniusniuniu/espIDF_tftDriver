@@ -23,7 +23,7 @@ void app_main(void)
     memset(color_data, 0x07E0, (x_end - x_start) * (y_end - y_start) * 2); 
     //画一个矩形
     panel_ili9341_draw_bitmap(x_start,y_start,x_end, y_end, color_data);
-    
+    tft_draw_point(125,125,0x0000);        
     free(color_data); 
 
 }

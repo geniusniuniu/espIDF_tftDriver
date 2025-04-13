@@ -69,5 +69,6 @@ extern ili9341_color_t const ILI9341_GREENYELLOW;
 extern ili9341_color_t const ILI9341_PINK;
 
 void tft_Init(void);
+esp_err_t tft_draw_point(uint16_t x, uint16_t y, uint16_t color);  
 
 #endif
