@@ -1,0 +1,18 @@
+{
+    "idf.pythonInstallPath": "/usr/bin/python",
+    "idf.flashType": "UART",
+    "idf.port": "/dev/ttyUSB0",
+    "files.associations": {
+        "esp_lcd_panel_interface.h": "c",
+        "compare": "cpp",
+        "cstdint": "cpp",
+        "freertos.h": "c",
+        "unity_test_runner.h": "c",
+        "unity.h": "c",
+        "esp_lcd_panel_io_interface.h": "c",
+        "esp_log.h": "c",
+        "esp_lcd_panel_io.h": "c",
+        "esp_heap_caps.h": "c",
+        "esp_lcd_ili9341.h": "c"
+    }
+}

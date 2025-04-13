@@ -1,0 +1,1096 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Linux - 6.14.1-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc 
+      Build flags: -mlongcalls
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/4.0.0/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ 
+      Build flags: -mlongcalls
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/4.0.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1230 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      xtensa-esp-elf-gcc (crosstool-NG esp-13.2.0_20230928) 13.2.0
+      Copyright (C) 2023 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-qWES4T"
+      binary: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-qWES4T"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mlongcalls "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gyy123/esp/esp-idf/tools/cmake;/home/gyy123/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-qWES4T'
+        
+        Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_b39ec
+        [1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls     -v -o CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b39ec.dir/'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b39ec.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -o /tmp/ccrYCZF0.s
+        GNU C17 (crosstool-NG esp-13.2.0_20230928) version 13.2.0 (xtensa-esp-elf)
+        	compiled by GNU C version 4.9.2, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include
+        End of search list.
+        Compiler executable checksum: 4539739640aaddb8d2d8a8b528c1da63
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b39ec.dir/'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj /tmp/ccrYCZF0.s
+        COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -v CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj -o cmTC_b39ec   && :
+        Using built-in specs.
+        COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
+        COLLECT_LTO_WRAPPER=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) 
+        COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_b39ec' '-dumpdir' 'cmTC_b39ec.'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2 -plugin /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoITxYy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --dynconfig=xtensa_esp32s3.so -o cmTC_b39ec /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_b39ec' '-dumpdir' 'cmTC_b39ec.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include]
+        end of search list found
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include]
+        implicit include dirs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include-fixed;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-qWES4T']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_b39ec]
+        ignore line: [[1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls     -v -o CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
+        ignore line: [Target: xtensa-esp-elf]
+        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b39ec.dir/']
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b39ec.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -o /tmp/ccrYCZF0.s]
+        ignore line: [GNU C17 (crosstool-NG esp-13.2.0_20230928) version 13.2.0 (xtensa-esp-elf)]
+        ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4539739640aaddb8d2d8a8b528c1da63]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b39ec.dir/']
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj /tmp/ccrYCZF0.s]
+        ignore line: [COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -v CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj -o cmTC_b39ec   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper]
+        ignore line: [Target: xtensa-esp-elf]
+        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) ]
+        ignore line: [COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_b39ec' '-dumpdir' 'cmTC_b39ec.']
+        link line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2 -plugin /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoITxYy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --dynconfig=xtensa_esp32s3.so -o cmTC_b39ec /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccoITxYy.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b39ec] ==> ignore
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib]
+          arg [CMakeFiles/cmTC_b39ec.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lnosys] ==> lib [nosys]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_b39ec' '-dumpdir' 'cmTC_b39ec.']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib]
+        implicit libs: [gcc;c;nosys;c;gcc]
+        implicit objs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        implicit dirs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-3YcL6Q"
+      binary: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-3YcL6Q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mlongcalls "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gyy123/esp/esp-idf/tools/cmake;/home/gyy123/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-3YcL6Q'
+        
+        Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_f4ee4
+        [1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls     -v -o CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-g++
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f4ee4.dir/'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4ee4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -o /tmp/ccD8Gdfw.s
+        GNU C++17 (crosstool-NG esp-13.2.0_20230928) version 13.2.0 (xtensa-esp-elf)
+        	compiled by GNU C version 4.9.2, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include
+        End of search list.
+        Compiler executable checksum: a028436f3bbddb46fb1c3c82b1060db5
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f4ee4.dir/'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccD8Gdfw.s
+        COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -v CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_f4ee4   && :
+        Using built-in specs.
+        COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-g++
+        COLLECT_LTO_WRAPPER=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) 
+        COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_f4ee4' '-dumpdir' 'cmTC_f4ee4.'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2 -plugin /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMuqjER.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --dynconfig=xtensa_esp32s3.so -o cmTC_f4ee4 /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_f4ee4' '-dumpdir' 'cmTC_f4ee4.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include]
+        end of search list found
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/backward]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include]
+        implicit include dirs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/backward;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include-fixed;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-3YcL6Q']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_f4ee4]
+        ignore line: [[1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls     -v -o CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
+        ignore line: [Target: xtensa-esp-elf]
+        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f4ee4.dir/']
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4ee4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -o /tmp/ccD8Gdfw.s]
+        ignore line: [GNU C++17 (crosstool-NG esp-13.2.0_20230928) version 13.2.0 (xtensa-esp-elf)]
+        ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: a028436f3bbddb46fb1c3c82b1060db5]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f4ee4.dir/']
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccD8Gdfw.s]
+        ignore line: [COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -v CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_f4ee4   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper]
+        ignore line: [Target: xtensa-esp-elf]
+        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) ]
+        ignore line: [COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_f4ee4' '-dumpdir' 'cmTC_f4ee4.']
+        link line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2 -plugin /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMuqjER.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --dynconfig=xtensa_esp32s3.so -o cmTC_f4ee4 /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccMuqjER.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f4ee4] ==> ignore
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib]
+          arg [CMakeFiles/cmTC_f4ee4.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lnosys] ==> lib [nosys]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_f4ee4' '-dumpdir' 'cmTC_f4ee4.']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib]
+        implicit libs: [stdc++;m;gcc;c;nosys;c;gcc]
+        implicit objs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        implicit dirs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:318 (check_include_file)"
+      - "/home/gyy123/esp/esp-idf/CMakeLists.txt:249 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-b9sHGA"
+      binary: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-b9sHGA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mlongcalls "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gyy123/esp/esp-idf/tools/cmake;/home/gyy123/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-b9sHGA'
+        
+        Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_bf83b
+        [1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_bf83b.dir/CheckIncludeFile.c.obj -c /home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-b9sHGA/CheckIncludeFile.c
+        [2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_bf83b.dir/CheckIncludeFile.c.obj -o cmTC_bf83b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:319 (check_include_file)"
+      - "/home/gyy123/esp/esp-idf/CMakeLists.txt:249 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ynfc4G"
+      binary: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ynfc4G"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mlongcalls "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gyy123/esp/esp-idf/tools/cmake;/home/gyy123/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ynfc4G'
+        
+        Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_70095
+        [1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_70095.dir/CheckIncludeFile.c.obj -c /home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-ynfc4G/CheckIncludeFile.c
+        [2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_70095.dir/CheckIncludeFile.c.obj -o cmTC_70095   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:320 (check_include_file)"
+      - "/home/gyy123/esp/esp-idf/CMakeLists.txt:249 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-SaoxmE"
+      binary: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-SaoxmE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mlongcalls "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gyy123/esp/esp-idf/tools/cmake;/home/gyy123/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-SaoxmE'
+        
+        Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_149aa
+        [1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_149aa.dir/CheckIncludeFile.c.obj -c /home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-SaoxmE/CheckIncludeFile.c
+        [2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_149aa.dir/CheckIncludeFile.c.obj -o cmTC_149aa   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:212 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:339 (__check_type_size_impl)"
+      - "/home/gyy123/esp/esp-idf/CMakeLists.txt:249 (check_type_size)"
+    checks:
+      - "Check size of time_t"
+    directories:
+      source: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-GsFdQN"
+      binary: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-GsFdQN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mlongcalls "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gyy123/esp/esp-idf/tools/cmake;/home/gyy123/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "HAVE_TIME_T_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-GsFdQN'
+        
+        Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_899d8
+        [1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -o CMakeFiles/cmTC_899d8.dir/TIME_T_SIZE.c.obj -c /home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-GsFdQN/TIME_T_SIZE.c
+        [2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls  CMakeFiles/cmTC_899d8.dir/TIME_T_SIZE.c.obj -o cmTC_899d8   && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Linux - 6.14.1-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc 
+      Build flags: -mlongcalls
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/4.0.1/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ 
+      Build flags: -mlongcalls
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/4.0.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1230 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      xtensa-esp-elf-gcc (crosstool-NG esp-13.2.0_20230928) 13.2.0
+      Copyright (C) 2023 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-sgu5D8"
+      binary: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-sgu5D8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mlongcalls "
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gyy123/esp/esp-idf/tools/cmake;/home/gyy123/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-sgu5D8'
+        
+        Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_5cbf5
+        [1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls     -v -o CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5cbf5.dir/'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5cbf5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -o /tmp/cc9sjGDA.s
+        GNU C17 (crosstool-NG esp-13.2.0_20230928) version 13.2.0 (xtensa-esp-elf)
+        	compiled by GNU C version 4.9.2, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include
+        End of search list.
+        Compiler executable checksum: 4539739640aaddb8d2d8a8b528c1da63
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5cbf5.dir/'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj /tmp/cc9sjGDA.s
+        COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -v CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj -o cmTC_5cbf5   && :
+        Using built-in specs.
+        COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
+        COLLECT_LTO_WRAPPER=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) 
+        COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_5cbf5' '-dumpdir' 'cmTC_5cbf5.'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2 -plugin /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cce0eFKQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --dynconfig=xtensa_esp32s3.so -o cmTC_5cbf5 /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_5cbf5' '-dumpdir' 'cmTC_5cbf5.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include]
+        end of search list found
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include]
+        implicit include dirs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include-fixed;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-sgu5D8']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_5cbf5]
+        ignore line: [[1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls     -v -o CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
+        ignore line: [Target: xtensa-esp-elf]
+        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5cbf5.dir/']
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5cbf5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -o /tmp/cc9sjGDA.s]
+        ignore line: [GNU C17 (crosstool-NG esp-13.2.0_20230928) version 13.2.0 (xtensa-esp-elf)]
+        ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4539739640aaddb8d2d8a8b528c1da63]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5cbf5.dir/']
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj /tmp/cc9sjGDA.s]
+        ignore line: [COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -v CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj -o cmTC_5cbf5   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper]
+        ignore line: [Target: xtensa-esp-elf]
+        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) ]
+        ignore line: [COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_5cbf5' '-dumpdir' 'cmTC_5cbf5.']
+        link line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2 -plugin /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cce0eFKQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --dynconfig=xtensa_esp32s3.so -o cmTC_5cbf5 /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cce0eFKQ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5cbf5] ==> ignore
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib]
+          arg [CMakeFiles/cmTC_5cbf5.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lnosys] ==> lib [nosys]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_5cbf5' '-dumpdir' 'cmTC_5cbf5.']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib]
+        implicit libs: [gcc;c;nosys;c;gcc]
+        implicit objs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        implicit dirs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-M4NhDp"
+      binary: "/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-M4NhDp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mlongcalls "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gyy123/esp/esp-idf/tools/cmake;/home/gyy123/esp/esp-idf/tools/cmake/third_party"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-M4NhDp'
+        
+        Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_a9cfa
+        [1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls     -v -o CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-g++
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) 
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_a9cfa.dir/'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a9cfa.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -o /tmp/cc4Lqlia.s
+        GNU C++17 (crosstool-NG esp-13.2.0_20230928) version 13.2.0 (xtensa-esp-elf)
+        	compiled by GNU C version 4.9.2, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include"
+        ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include
+        End of search list.
+        Compiler executable checksum: a028436f3bbddb46fb1c3c82b1060db5
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_a9cfa.dir/'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc4Lqlia.s
+        COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -v CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_a9cfa   && :
+        Using built-in specs.
+        COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-g++
+        COLLECT_LTO_WRAPPER=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) 
+        COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_a9cfa' '-dumpdir' 'cmTC_a9cfa.'
+         /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2 -plugin /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqsffJ9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --dynconfig=xtensa_esp32s3.so -o cmTC_a9cfa /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_a9cfa' '-dumpdir' 'cmTC_a9cfa.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include]
+          add: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include]
+        end of search list found
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/backward]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include]
+        collapse include dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include]
+        implicit include dirs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/backward;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include-fixed;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/gyy123/esp/esp-idf/tools/cmake/project.cmake:506 (__project)"
+      - "CMakeLists.txt:66 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/gyy123/esp/testDir/04_tft/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-M4NhDp']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/gyy123/esp/esp-idf/tools/tools/ninja/1.11.1/ninja -v cmTC_a9cfa]
+        ignore line: [[1/2] /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls     -v -o CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
+        ignore line: [Target: xtensa-esp-elf]
+        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_a9cfa.dir/']
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a9cfa.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -o /tmp/cc4Lqlia.s]
+        ignore line: [GNU C++17 (crosstool-NG esp-13.2.0_20230928) version 13.2.0 (xtensa-esp-elf)]
+        ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/xtensa-esp-elf/esp32s3]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include/c++/13.2.0/backward]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/sys-include]
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: a028436f3bbddb46fb1c3c82b1060db5]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_a9cfa.dir/']
+        ignore line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc4Lqlia.s]
+        ignore line: [COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -v CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_a9cfa   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper]
+        ignore line: [Target: xtensa-esp-elf]
+        ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20230928' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-esp-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (crosstool-NG esp-13.2.0_20230928) ]
+        ignore line: [COMPILER_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/]
+        ignore line: [LIBRARY_PATH=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/:/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_a9cfa' '-dumpdir' 'cmTC_a9cfa.']
+        link line: [ /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2 -plugin /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqsffJ9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --dynconfig=xtensa_esp32s3.so -o cmTC_a9cfa /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc -L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o /home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccqsffJ9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a9cfa] ==> ignore
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc]
+          arg [-L/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib]
+          arg [CMakeFiles/cmTC_a9cfa.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lnosys] ==> lib [nosys]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o]
+          arg [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o] ==> obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-v' '-o' 'cmTC_a9cfa' '-dumpdir' 'cmTC_a9cfa.']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3/crt0.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o]
+        collapse obj [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc]
+        collapse library dir [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib] ==> [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib]
+        implicit libs: [stdc++;m;gcc;c;nosys;c;gcc]
+        implicit objs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3/crt0.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crti.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtbegin.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtend.o;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3/crtn.o]
+        implicit dirs: [/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib/esp32s3;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/lib/gcc;/home/gyy123/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/lib]
+        implicit fwks: []
+      
+      
+...

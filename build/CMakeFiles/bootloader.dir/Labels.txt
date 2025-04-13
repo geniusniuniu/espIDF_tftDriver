@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/gyy123/esp/testDir/04_tft/build/CMakeFiles/bootloader
+/home/gyy123/esp/testDir/04_tft/build/CMakeFiles/bootloader.rule
+/home/gyy123/esp/testDir/04_tft/build/CMakeFiles/bootloader-complete.rule
+/home/gyy123/esp/testDir/04_tft/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/gyy123/esp/testDir/04_tft/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/gyy123/esp/testDir/04_tft/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/gyy123/esp/testDir/04_tft/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/gyy123/esp/testDir/04_tft/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/gyy123/esp/testDir/04_tft/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/gyy123/esp/testDir/04_tft/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
