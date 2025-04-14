@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "04_TFT",
-    "project_version":    "1",
+    "project_version":    "425e804-dirty",
     "project_path":       "/home/gyy123/esp/testDir/04_tft",
     "idf_path":           "/home/gyy123/esp/esp-idf",
     "build_dir":          "/home/gyy123/esp/testDir/04_tft/build",
