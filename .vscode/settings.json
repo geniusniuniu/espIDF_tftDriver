@@ -13,6 +13,7 @@
         "esp_log.h": "c",
         "esp_lcd_panel_io.h": "c",
         "esp_heap_caps.h": "c",
-        "esp_lcd_ili9341.h": "c"
+        "esp_lcd_ili9341.h": "c",
+        "random": "c"
     }
 }

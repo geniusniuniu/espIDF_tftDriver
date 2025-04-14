@@ -19,16 +19,14 @@ void app_main(void)
     tft_Init();
     ESP_LOGI(TAG, "LCD INIT OVER !");
     tft_fill_screen(0x0000);
-    // 分配颜色数据缓冲区  
-    uint16_t *color_data = malloc((x_end - x_start) * (y_end - y_start) * 2); // 假设RGB565每像素2字节  
-    memset(color_data, 0x07E0, (x_end - x_start) * (y_end - y_start) * 2); 
-    //画一个矩形
-    panel_ili9341_draw_bitmap(x_start,y_start,x_end, y_end, color_data);
     //画一个点
     tft_draw_point(125,125,0x0000);  
     //画一条斜线      
-    tft_draw_line(10, 125, 10, 125, 0x0000); 
-
-    free(color_data); 
-
+    tft_draw_line(100, 150, 100, 150, 0xffff); 
+    //画一个矩形
+    tft_draw_rectangle(x_start,y_start,x_end, y_end, 0x07E0,TFT_NOT_FILLED);
+    //画一个填充矩形
+    tft_draw_rectangle(x_start,y_start+80,x_end, y_end+80, 0xffff,TFT_IS_FILLED);
+    //画圆
+    
 }

@@ -86,7 +86,7 @@ void tft_Init(void)
 
 }
 
-esp_err_t tft_draw_point(uint16_t x, uint16_t y, uint16_t color)  
+void tft_draw_point(uint16_t x, uint16_t y, uint16_t color)  
 {  
     x += ili9341->x_gap;  
     y += ili9341->y_gap;  
@@ -96,13 +96,11 @@ esp_err_t tft_draw_point(uint16_t x, uint16_t y, uint16_t color)
     // 定义一个1x1的位图  
     uint16_t color_data = color ; // 假设是16位颜色，深度可能不同，需根据实际显示面板位深调整  
 
-    esp_lcd_panel_io_tx_param(ili9341->io, LCD_CMD_CASET, (uint8_t[]) { (x >> 8) & 0xFF,  x & 0xFF,   (x >> 8) & 0xFF, x & 0xFF,  }, 4);  
-    esp_lcd_panel_io_tx_param(ili9341->io, LCD_CMD_RASET, (uint8_t[]) { (y >> 8) & 0xFF,y & 0xFF,  (y >> 8) & 0xFF, y & 0xFF, }, 4);  
+    esp_lcd_panel_io_tx_param(ili9341->io, LCD_CMD_CASET, (uint8_t[]) { (x >> 8) & 0xFF, x & 0xFF,  (x >> 8) & 0xFF, x & 0xFF}, 4);  
+    esp_lcd_panel_io_tx_param(ili9341->io, LCD_CMD_RASET, (uint8_t[]) { (y >> 8) & 0xFF, y & 0xFF,  (y >> 8) & 0xFF, y & 0xFF}, 4);  
 
     size_t len = sizeof(uint16_t);  
     esp_lcd_panel_io_tx_color(ili9341->io, LCD_CMD_RAMWR, &color_data, len);  
-
-    return ESP_OK;  
 }  
 
 //填充整个屏幕
@@ -115,10 +113,10 @@ void tft_fill_screen(uint16_t color)
     memset(color_data, color, LCD_H_RES * LCD_V_RES * 2);                     //填充颜色数据
     esp_lcd_panel_io_tx_color(ili9341->io, LCD_CMD_RAMWR, color_data, LCD_H_RES * LCD_V_RES * 2);
 
-    ESP_LOGI(TAG, "fill screen  OK!");
+    ESP_LOGI(TAG, "Filled Screen  OK!");
 }
 
-esp_err_t tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint16_t y_end,uint16_t color)
+void tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint16_t y_end,uint16_t color)
 {
     uint8_t yflag = 0, xyflag = 0;
     int delta_x ;
@@ -133,6 +131,7 @@ esp_err_t tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint1
     x_end += ili9341->x_gap;
     y_start+= ili9341->y_gap;  
     y_end += ili9341->y_gap;
+    
     // 确保坐标在显示范围内  
     assert((x_start < LCD_H_RES && x_end < LCD_H_RES) && (y_start < LCD_V_RES && y_end < LCD_V_RES) && " position must in 240*320 ");
 
@@ -144,7 +143,6 @@ esp_err_t tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint1
         {
             tft_draw_point(x_start, y_start, color);
         }
-        ESP_LOGI(TAG, "vertical line OK!");
     } else if (y_end - y_start == 0)    //水平线
     {
         if(x_end < x_start){xy_SWAP(&x_start,&x_end);}  //交换首尾坐标
@@ -153,7 +151,7 @@ esp_err_t tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint1
             tft_draw_point(x_start, y_start, color);
         }
     }
-    else    // 画斜线 /*使用Bresenham算法画直线，可以避免耗时的浮点运算，效率更高*/
+    else    // 画斜线 
     {
         if(x_start > x_end)
         {
@@ -198,7 +196,7 @@ esp_err_t tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint1
         else                                    tft_draw_point(x, y, color);
 
         while(x < x_end)
-        {
+        {    
             x++;
             if(d < 0)   //选择E
             {
@@ -215,6 +213,42 @@ esp_err_t tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint1
             else if(!yflag && xyflag)   tft_draw_point(y, x, color);
             else                                    tft_draw_point(x, y, color);
         }
-    }     
-    return ESP_OK;
+    }
+    ESP_LOGI(TAG, "Draw Line OK!");     
 }  
+
+//画矩形
+void tft_draw_rectangle(uint16_t x_start, uint16_t y_start, uint16_t x_end, uint16_t y_end, uint16_t color,uint8_t filled)
+{
+    if(filled == TFT_NOT_FILLED)   //不填充
+   {
+         tft_draw_line(x_start, x_end, y_start, y_start, color);    //上边
+         tft_draw_line(x_start, x_end, y_end, y_end, color);       //下边
+         tft_draw_line(x_start, x_start, y_start, y_end, color);    //左边
+         tft_draw_line(x_end, x_end, y_start, y_end, color);       //右边
+   }
+   else
+   {
+        for(int i = x_start; i < x_end; i++)
+        {
+            for(int j = y_start; j < y_end; j++)
+            {
+                tft_draw_point(i, j, color);
+            }
+        }
+   }
+    ESP_LOGI(TAG, "Draw Rectangle OK!"); 
+}
+
+//画圆
+void tft_draw_circle(uint16_t x, uint16_t y, uint16_t r, uint16_t color,uint8_t filled)
+{
+    x += ili9341->x_gap;
+    y += ili9341->y_gap;
+
+    // 确保坐标在显示范围内
+    assert((x+r < LCD_H_RES) && (y+r < LCD_V_RES) && " position must in 240*320 ");
+    assert((x-r > 0) && (y-r > 0) && " position must in 240*320 ");
+
+    //神秘小算法。。。待添加
+}

@@ -46,6 +46,8 @@
 
 #define xy_SWAP(a,b) 	do{int temp = *(a);*(a) = *(b); *(b) = temp;}while(0)
 
+#define TFT_NOT_FILLED	0
+#define TFT_IS_FILLED		1
 
  extern esp_lcd_panel_handle_t panel_handle;
 
@@ -73,6 +75,7 @@ extern ili9341_color_t const ILI9341_PINK;
 
 void tft_Init(void);
 void tft_fill_screen(uint16_t color);
-esp_err_t tft_draw_point(uint16_t x, uint16_t y, uint16_t color);  
-esp_err_t tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint16_t y_end,uint16_t color);
+void tft_draw_point(uint16_t x, uint16_t y, uint16_t color);  
+void tft_draw_line(uint16_t x_start, uint16_t x_end,uint16_t y_start ,uint16_t y_end,uint16_t color);
+void tft_draw_rectangle(uint16_t x_start, uint16_t y_start, uint16_t x_end, uint16_t y_end, uint16_t color,uint8_t filled);
 #endif
