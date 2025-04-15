@@ -28,5 +28,6 @@ void app_main(void)
     //画一个填充矩形
     tft_draw_rectangle(x_start,y_start+80,x_end, y_end+80, 0xffff,TFT_IS_FILLED);
     //画圆
+    tft_draw_circle(100, 100, 50, 0xffff,TFT_IS_FILLED);
     
 }

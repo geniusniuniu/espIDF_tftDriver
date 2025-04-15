@@ -241,14 +241,74 @@ void tft_draw_rectangle(uint16_t x_start, uint16_t y_start, uint16_t x_end, uint
 }
 
 //画圆
-void tft_draw_circle(uint16_t x, uint16_t y, uint16_t r, uint16_t color,uint8_t filled)
+void tft_draw_circle(uint16_t A, uint16_t B, uint16_t r, uint16_t color,uint8_t filled)
 {
-    x += ili9341->x_gap;
-    y += ili9341->y_gap;
+    int d = 1-r;
+    int X=0;
+    int Y=r;
+    A += ili9341->x_gap;
+    B += ili9341->y_gap;
 
     // 确保坐标在显示范围内
-    assert((x+r < LCD_H_RES) && (y+r < LCD_V_RES) && " position must in 240*320 ");
-    assert((x-r > 0) && (y-r > 0) && " position must in 240*320 ");
+    assert((A+r < LCD_H_RES) && (B+r < LCD_V_RES) && " position must in 240*320 ");
+    assert((A-r > 0) && (B-r > 0) && " position must in 240*320 ");
 
-    //神秘小算法。。。待添加
+    //先画出x，y轴上的点
+    //x轴正方向
+    tft_draw_point(A+0, B+r, color);
+    //x轴负方向
+    tft_draw_point(A-0, B-r, color);
+    //y轴正方向
+    tft_draw_point(A+Y, B+0, color);
+    //y轴负方向
+    tft_draw_point(A-Y, B-0, color);
+
+    //填充圆心列
+    if(filled == TFT_IS_FILLED)
+    {
+        tft_draw_line(A,A,B-Y,B+Y,color);
+    }
+
+
+    //在第一象限遍历每个点
+    while (X < Y)
+    {
+        X++;
+        if(d<0) //东方衍生新像素点
+        {
+            d += 2*X+1;
+        }
+        else    //东南方衍生新像素点
+        {
+            Y--;
+            d += 2*X-2*Y+1;
+        }
+        //画出这个点对应的8个点
+        tft_draw_point(A+X, B+Y, color); 
+        tft_draw_point(A+Y, B+X, color); 
+        tft_draw_point(A-X, B-Y,  color); 
+        tft_draw_point(A-Y, B-X,  color);
+        tft_draw_point(A+X, B-Y, color);
+        tft_draw_point(A+Y, B-X, color);
+        tft_draw_point(A-X, B+Y, color);
+        tft_draw_point(A-Y, B+X, color);
+
+        if(filled == TFT_IS_FILLED)   //填充
+        {
+            //由圆心向两侧填充每一列
+            for(int i = -Y; i < Y; i++)
+            {
+                tft_draw_point(A+X, B+i, color);
+                tft_draw_point(A-X, B+i, color);
+            }
+
+            //填充两侧
+            for(int j = -X; j < X; j++)
+            {
+                tft_draw_point(A-Y, B+j, color);
+                tft_draw_point(A+Y, B+j, color);
+            }
+        }
+    }
+    ESP_LOGI(TAG, "Draw Circle OK!");
 }
